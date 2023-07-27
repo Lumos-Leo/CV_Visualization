@@ -1,9 +1,8 @@
 import torch
 
 # ===========================获取指定层的特征图======================================= #
+feas = []
 def extract_features(model:torch.nn.Module):
-    feas = []
-    import torch.nn.functional as F
     def get_fesa(module, input, output):
         feas.append(output)
 
